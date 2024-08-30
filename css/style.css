@@ -1,0 +1,189 @@
+.site-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+header {
+    background: radial-gradient(#269193,#448b8c);
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 1000px;
+    padding: 8px;
+}
+
+header h1 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: "Montserrat", "Helvetica Neue",;
+}
+
+header p {
+    color: #053d3e;
+    font-size: 1rem;
+    font-weight: normal;
+    margin-top: 8px;
+    font-family: Helvetica, sans-serif;
+}
+
+.main {
+    width: 100%;
+    max-width: 968px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 0 16px;
+    margin-top: -50px; 
+}
+
+.list-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 8px;
+}
+
+.list-input input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.list-input button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: #0bb113;
+    color: #ffffff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.show-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.show-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.info b {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.count-tasks {
+    width: 32px;
+    height: 32px;
+    background-color: #e19d9d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.count-finished {
+    width: 32px;
+    height: 32px;
+    background-color: #b0e2b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 999px;
+
+}
+
+.task-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.task-item {
+
+    width: 100%;
+    padding: 16px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #e0dce4;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+
+    appearance: none;
+
+    background-color: transparent;
+
+    outline: none;
+
+    font: inherit;
+    color: currentColor;
+    width: 20px;
+    height: 20px;
+    border: 1px dashed #6f3cc3;
+    border-radius: 10em;
+    transform: translateY(-0.075em);
+
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    background-color: #fff;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #84cc16;
+    border-color: #84cc16;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+input[type="checkbox"]:disabled {
+
+    cursor: not-allowed;
+}

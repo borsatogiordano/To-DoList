@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Helvetica Neue", Helvetica, Arial;
+    list-style-type: none;
+}
+
+
+
+button, input, textarea, a {
+    border: 0;
+    outline: 0;
+}
+
+a{
+    text-decoration: none;
+}
