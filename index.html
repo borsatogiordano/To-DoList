@@ -1,54 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Afazeres</title>
-
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Afazeres</title>
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-    <div class="site-container">
-        <header>
-            <div>
-                <h1>TO - DO LIST</h1>
-                <p>
-                    "Transfome suas listas em conquistas: organize. priorize e realize!"
-                </p>
-            </div>
-        </header>
-
-        <main class="main">
-            <div class="list-input">
-                <input type="text" id="addTask" placeholder="Adicione uma nova tarefa">
-                <button id="add-button">ADICIONAR</button>
-            </div>
-
-            <div class="show-list">
-                <div class="show-list-header">
-                    <div class="info">
-                        <b>Tarefas criadas</b>
-                        <span class="count-tasks"> 0</span>
-                    </div>
-                    <div class="info">
-                        <b>Concluídas</b>
-                        <span class="count-finished"> 0</span>
-                    </div>
-                </div>
-
-                <div class="empty-space">
-                    <ul class="task-list">
-                        <li class="task-item"></li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </main>
-    </div>
-    <script src="./js/script.js"> </script>
+  <div class="site-container">
+    <header>
+      <div>
+        <h1>TO - DO LIST</h1>
+        <p>Transfome suas listas em conquistas: organize. priorize e realize!</p>
+      </div>
+    </header>
+    <main class="main">
+      <div class="list-input">
+        <input type="text" id="addTask" placeholder="Adicione uma nova tarefa">
+        <button id="add-button">ADICIONAR</button>
+      </div>
+      <div class="show-list">
+        <div class="show-list-header">
+          <div class="info">
+            <b>Tarefas criadas</b>
+            <span class="count-tasks">0</span>
+          </div>
+          <div class="info">
+            <b>Concluídas</b>
+            <span class="count-finished">0</span>
+          </div>
+        </div>
+        <div class="empty-space">
+          <ul class="task-list" id="task-list"></ul>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="./js/script.js"></script>
 </body>
-
 </html>
